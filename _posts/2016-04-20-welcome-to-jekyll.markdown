@@ -2,7 +2,9 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-04-20 12:38:44 +0700
-categories: 
+categories:
+permalink: /posts/welcome-to-jekyll/
+
 ---
 
 ##Hello World
