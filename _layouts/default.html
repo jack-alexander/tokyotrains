@@ -43,5 +43,16 @@
         }, false);
       })(document);
     </script>
+
+    <script>
+    $('article').readmore({
+        speed: 150,
+        embedCSS: true,
+        collapsedHeight: 216,
+        moreLink: '<a href="#">Keep reading</a>',
+        lessLink: '<a href="#">Hide</a>',
+        blockCSS: 'display: block; width: 100%;'
+      });
+    </script>
   </body>
 </html>

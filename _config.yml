@@ -6,10 +6,10 @@ permalink:           pretty
 # Setup
 title:               Tokyo Trains
 tagline:             'A study of colors, shapes & textures found in Japanese train stations.'
-description:         'Tokyo Trains is made by Jack Alexander'
-url:                 http://lanyon.getpoole.com
+description:         'Tokyo Trains is a study of colors, shapes & textures found in Japanese train stations.'
+url:                 http://jack-alexander.github.io/tokyotrains
 baseurl:             ''
-paginate:            5
+paginate:            10
 
 # About/contact
 author:
@@ -18,6 +18,6 @@ author:
   email:             contact@jack-alexander.co
 
 # Custom vars
-version:             1.0.0
+version:             0.3
 
 gems:                [jekyll-paginate]
