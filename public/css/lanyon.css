@@ -571,5 +571,5 @@ Jack's Additions
   background-image: url("/assets/blog-images/colored-stripe.png");
   background-repeat: repeat-x;
   background-position: center;
-background-size: contain;
+  background-size: contain;
 }

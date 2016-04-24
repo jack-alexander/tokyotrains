@@ -476,7 +476,8 @@ Jack's Additions
   color: #1ca8fc !important;
 }
 .site-logo {
-  max-width: 300px;
+  max-width: 250px;
+  border-radius: 0px;
 }
 
 .masthead {
