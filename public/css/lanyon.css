@@ -556,7 +556,7 @@ Jack's Additions
     z-index: -5;
 }
 .bg-orange {
-    background-image: url("/assets/orange-train-lines.png") !important;
+    background-image: url("http://jack-alexander.github.io/tokyotrains//assets/orange-train-lines.png") !important;
     background-position: right, top;
     position: fixed;
     background-size: cover;
@@ -567,7 +567,7 @@ Jack's Additions
     z-index: -4;
 }
 .bg-green {
-    background-image: url("/assets/green-train-lines.png") !important;
+    background-image: url("http://jack-alexander.github.io/tokyotrains//assets/green-train-lines.png") !important;
     background-position: top;
     position: fixed;
     background-size: cover;
@@ -578,7 +578,7 @@ Jack's Additions
     z-index: -3;
 }
 .bg-yellow {
-    background-image: url("/assets/yellow-train-lines.png") !important;
+    background-image: url("http://jack-alexander.github.io/tokyotrains//assets/yellow-train-lines.png") !important;
     background-position: right;
     position: fixed;
     background-size: cover;
@@ -589,7 +589,7 @@ Jack's Additions
     z-index: -2;
 }
 .bg-blue {
-    background-image: url("/assets/blue-train-lines.png") !important;
+    background-image: url("http://jack-alexander.github.io/tokyotrains//assets/blue-train-lines.png") !important;
     background-position: top, left;
     position: fixed;
     background-size: cover;
