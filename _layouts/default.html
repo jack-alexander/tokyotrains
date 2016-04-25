@@ -1,63 +1,121 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
     {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">
-              <img src="assets/blog-images/tokyo-trains-logo-text.png" class="site-logo"/>
-            </a>
-            <div class="colored-stripe"></div>
+    <div class="bg-color"></div>
+    <div class="bg-orange"></div>
+    <div class="bg-green"></div>
+    <div class="bg-yellow"></div>
+    <div class="bg-blue"></div>
 
-            <!-- <small>{{ site.tagline }}</small> -->
-          </h3>
+
+
+
+
+        <div class="wrap">
+            <div class="masthead">
+                <div class="container">
+                    <h3 class="masthead-title">
+              <a href="{{ site.baseurl }}/" title="Home">
+                <img src="assets/blog-images/tokyo-trains-logo-text.png" class="site-logo"/>
+              </a>
+              <div class="colored-stripe"></div>
+
+              <!-- <small>{{ site.tagline }}</small> -->
+            </h3>
+                </div>
+
+            </div>
+
+            <div class="container content">
+                {{ content }}
+            </div>
         </div>
 
-      </div>
 
-      <div class="container content">
-        {{ content }}
-      </div>
-    </div>
+
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
     <script>
-      (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
+        (function(document) {
+            var toggle = document.querySelector('.sidebar-toggle');
+            var sidebar = document.querySelector('#sidebar');
+            var checkbox = document.querySelector('#sidebar-checkbox');
 
-        document.addEventListener('click', function(e) {
-          var target = e.target;
+            document.addEventListener('click', function(e) {
+                var target = e.target;
 
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
+                if (!checkbox.checked ||
+                    sidebar.contains(target) ||
+                    (target === checkbox || target === toggle)) return;
 
-          checkbox.checked = false;
-        }, false);
-      })(document);
+                checkbox.checked = false;
+            }, false);
+        })(document);
     </script>
 
     <script>
-    $('article').readmore({
-        speed: 150,
-        embedCSS: true,
-        collapsedHeight: 216,
-        moreLink: '<a href="#">Keep reading</a>',
-        lessLink: '<a href="#">Hide</a>',
-        blockCSS: 'display: block; width: 100%;'
-      });
+        $('article').readmore({
+            speed: 150,
+            embedCSS: true,
+            collapsedHeight: 216,
+            moreLink: '<a href="#">Keep reading</a>',
+            lessLink: '<a href="#">Hide</a>',
+            blockCSS: 'display: block; width: 100%;'
+        });
     </script>
-  </body>
+
+    <script>
+        $(window).scroll(function(e) {
+            parallaxorange();
+        });
+
+        function parallaxorange() {
+            var scrolled = $(window).scrollTop();
+            $('.bg-orange').css('top', -(scrolled * 0.3) + 'px');
+        }
+    </script>
+
+    <script>
+        $(window).scroll(function(e) {
+            parallaxgreen();
+        });
+
+        function parallaxgreen() {
+            var scrolled = $(window).scrollTop();
+            $('.bg-green').css('top', -(scrolled * 0.05) + 'px');
+        }
+    </script>
+
+    <script>
+        $(window).scroll(function(e) {
+            parallaxyellow();
+        });
+
+        function parallaxyellow() {
+            var scrolled = $(window).scrollTop();
+            $('.bg-yellow').css('top', -(scrolled * -0.1) + 'px');
+        }
+    </script>
+
+    <script>
+        $(window).scroll(function(e) {
+            parallaxblue();
+        });
+
+        function parallaxblue() {
+            var scrolled = $(window).scrollTop();
+            $('.bg-blue').css('top', -(scrolled * -0.05) + 'px');
+        }
+    </script>
+</body>
+
 </html>
