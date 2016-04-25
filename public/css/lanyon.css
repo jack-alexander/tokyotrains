@@ -604,5 +604,8 @@ Jack's Additions
   background-color: rgba(255, 254, 213, 0.9) !important;
   padding: 1rem;
   border-radius: 10px;
+}
 
+.sidebar-toggle {
+  background-color: rgba(255, 254, 213, 0.9) !important;
 }
